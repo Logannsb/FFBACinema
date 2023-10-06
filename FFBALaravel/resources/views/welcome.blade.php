@@ -6,11 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FFBA Cinéma API </title>
-    <link rel="stylesheet" href="{{asset('assets/style.css')}}">
-  
+    <link rel="stylesheet" href="{{asset('assets/css/style_main_page.css')}}">
 </head>
 
 <body>
+<header>
+        <div class="logo">
+        <img class="logo_page" src="{{ asset('assets/img/logo_movie.png') }}" alt="Logo du site web">
+
+        </div>
+        <div class="connexion">
+            <a href="{{url('login')}}">Connexion</a>
+        </div>
+    </header>
     <div class="container">
         <h1>Films triés par moyenne des votes :</h1>
         <table>

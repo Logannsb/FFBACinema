@@ -6,42 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FFBA Cinéma API </title>
-    <style>
-        body{
-            background-color: whitesmoke;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            font-family: sans-serif;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            font-size: large;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="{{asset('assets/style.css')}}">
+  
 </head>
 
 <body>

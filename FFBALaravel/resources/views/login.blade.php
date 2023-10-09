@@ -13,9 +13,8 @@
 			<div class="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Inscription</label>
-					<input type="text" name="txt" placeholder="User name" required="">
 					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="pswd" placeholder="Mot de passe" required="">
 					<button>S'inscrire</button>
 				</form>
 			</div>
@@ -24,7 +23,7 @@
 				<form>
 					<label for="chk" aria-hidden="true">Connexion</label>
 					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="pswd" placeholder="Mot de passe" required="">
 					<button>Se connecter</button>
 				</form>
 			</div>

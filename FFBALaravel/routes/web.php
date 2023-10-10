@@ -2,6 +2,11 @@
 
 
 use App\Http\Controllers\MovieController;
+
+use App\Http\Controllers\MovieGenreController;
+
+use App\Http\Controllers\MovieDayController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +20,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MovieController::class, 'index']);
 
 /*Route::get('/login', function(){
 
@@ -23,15 +27,23 @@ return view('login');
 
 });
 */
+Route::get('/', [MovieController::class, 'index']);
+Route::get('/movday', [MovieDayController::class, 'movday']); 
+
+
+Route::get('/movie/{id}', 'App\Http\Controllers\MovieDayController@show')->name('movie-details');
+
+/* ... */
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    // Route pour afficher les films dans le tableau de bord
-    Route::get('/dashboard/movies', [MovieController::class, 'index'])->name('dashboard.movies');
-
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/dashboard/movies', [MovieController::class, 'index'])->name('dashboard.movies');
 });
+

@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Auth;
+
 
 class MovieController extends Controller
 {
+
 
     public function index()
     {
@@ -17,26 +20,23 @@ class MovieController extends Controller
                 'accept' => 'application/json',
             ],
         ]);
-    
+
         $content = $response->getBody()->getContents();
         $data = json_decode($content, true);
-    
+
         if ($data !== null) {
             usort($data['results'], function ($a, $b) {
                 return strcmp($b['vote_average'], $a['vote_average']);
             });
-    
-            // Déterminer quelle vue renvoyer en fonction de la demande
-            if (request()->is('dashboard*')) {
+
+
+            if (request()->is('dashboard')) {
                 return view('dashboard')->with('movies', $data['results']);
             } else {
-                return view('welcome')->with('movies', $data['results']);
+                return view('movday')->with('movies', $data['results']);
             }
         } else {
             return response('Erreur lors de la récupération des données', 500);
         }
     }
-    
-    
-    
 }

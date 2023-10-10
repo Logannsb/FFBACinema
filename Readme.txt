@@ -1,20 +1,16 @@
-Clé API : 
-eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMjJkNjNjZGRjMDY2ZDk5ZWQzZTgwNmQzMjY3MThjYSIsInN1YiI6IjYyNGVhNTRhYjc2Y2JiMDA2ODIzODc4YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zuuBq1c63XpADl8SQ_c62hezeus7VibE1w5Da5UdYyo
+Cihan et Logan : Bonjour, voici le projet que nous avons réalisé. 
+Nous avons utilisé différentes technologies de Laravel, notamment Jetstream pour mettre en place les fonctionnalités de base, PHP Artisan pour la gestion des commandes, et Composer pour la gestion des dépendances.
 
+Cihan s'est principalement concentré sur la gestion des utilisateurs, ce qui lui a permis de mettre en place les fonctionnalités de création d'utilisateur, de modification du mot de passe et du nom d'utilisateur, ainsi que la possibilité de supprimer un compte.
+Il a également implémenté la double authentification pour renforcer la sécurité.
 
-Bonjour, 
-exercice assez difficile pour ma part car je ne connaissait pas laravel, j'ai eu des difficulté a comprendre le fonctionnement de la liaison a l'api.
+Logan, de son côté, s'est occupé des requêtes API. 
+Il a développé les fonctionnalités permettant de lister les films du jour, triés par ordre de votes, et a créé des pages de détail pour chaque film, accessibles en cliquant sur leur titre. 
+Logan a également tenté de transférer les données depuis l'API vers une base de données MySQL locale, bien que cette partie du projet n'ait pas abouti comme prévu.
 
-J'ai commencer avec une installation de laravel, lancer avec "php artisan serv" depuis le localhost "8000"
+Nous avons rencontré divers défis tout au long du développement, notamment la mise en place du CRUD, la récupération des détails des films à partir de l'API, ainsi que des problèmes techniques tels que la suppression accidentelle de fichiers sur GitHub.
 
-Ensuite j'ai créer mon movie controller grace a la commande php artisan 
-Dans mon movie controller j'ai mis l'autorisation Bearer avec la clé API fourni
+Nous avons collaboré étroitement tout au long du projet, en nous attribuant les tâches conjointement et en travaillant en tandem sur la plupart des aspects.
+Ce projet nous a permis d'approfondir nos connaissances sur le framework Laravel, et nous sommes enthousiastes à l'idée de continuer à apprendre et à relever de nouveaux défis dans le domaine du développement web.
 
-j'ai créer ma requete vers l'api des films du jours , que j'ai ensuite mis dans un tableau pour choisir les informations que je voulais afficher ,qui celle-ci sont trier par la moyenne des votes.
-Ce tableau est disponible dans mon views/welcome.blade.php .
-
-
-Manquant de temps et ayant recommencer plusieurs fois car plusieurs test en vain,  je peux malheuresement pas vous proposer plus.. 
-Merci de votre test qui m'as quand meme permis de découvrir une nouvelle technologie intéressante. 
-
-nussbaum logan.
+Pour mener à bien ce projet, nous avons utilisé diverses ressources, notamment la documentation de l'API, la documentation de Laravel, des tutoriels sur YouTube, ainsi que des forums comme Stack Overflow.

@@ -1,4 +1,4 @@
-body{
+body {
     background-color: whitesmoke;
     margin: 0 0;
 }
@@ -34,18 +34,14 @@ tr:hover {
     background-color: #ddd;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333; 
-    padding: 10px 20px; 
-    color: #fff; 
-   
-    
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
 }
-
 
 .logo img {
     max-width: 100%;
@@ -54,23 +50,33 @@ header {
 
 .connexion a {
     text-decoration: none;
-    color: #fff; 
-    padding: 10px 15px; 
-    border: 2px solid #fff; 
-    border-radius: 5px; 
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
     font-family: sans-serif;
 }
 
-
 .connexion a:hover {
-    background-color: #fff; 
-    color: #333; 
+    background-color: #fff;
+    color: #333;
 }
-.logo_page{
+.register a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
 
-width: 75px;
-height: 75px;
-border: 1px solid rgb(0, 152, 183);
-border-radius: 75px;
-
+.register a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.logo_page {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(0, 152, 183);
+    border-radius: 75px;
 }

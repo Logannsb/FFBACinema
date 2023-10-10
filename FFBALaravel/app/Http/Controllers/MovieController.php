@@ -17,17 +17,26 @@ class MovieController extends Controller
                 'accept' => 'application/json',
             ],
         ]);
-
+    
         $content = $response->getBody()->getContents();
         $data = json_decode($content, true);
-
+    
         if ($data !== null) {
             usort($data['results'], function ($a, $b) {
                 return strcmp($b['vote_average'], $a['vote_average']);
             });
-            return view('welcome')->with('movies', $data['results']);
+    
+            // Déterminer quelle vue renvoyer en fonction de la demande
+            if (request()->is('dashboard*')) {
+                return view('dashboard')->with('movies', $data['results']);
+            } else {
+                return view('welcome')->with('movies', $data['results']);
+            }
         } else {
             return response('Erreur lors de la récupération des données', 500);
         }
     }
+    
+    
+    
 }
